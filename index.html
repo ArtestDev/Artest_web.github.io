@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script
+    type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
+  ></script>
+  <head>
+    <!-- 
+      This is an HTML comment
+      You can write text in a comment and the content won't be visible in the page
+    -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <!--
+      This is the page head - it contains info the browser uses
+      Like the title, which appears on the browser tab but not inside the page
+      Further down you'll see the content that displays in the page
+    -->
+    <title>Hello World!</title>
+
+    <!-- The website stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- The website JavaScript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <model-viewer
+        src="https://cdn.glitch.global/37e1ddc3-023f-4f71-9972-cf51367dc053/NeilArmstrong.glb?v=1686785400918"
+        ar
+        ar-modes="scene-viewer webxr quick-look"
+        camera-controls
+        poster="poster.webp"
+        shadow-intensity="1"
+      >
+        <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+        </div>
+        <button slot="ar-button" id="ar-button">View in your space</button>
+        
+      </model-viewer>
+    </div>
+  </body>
+</html>
