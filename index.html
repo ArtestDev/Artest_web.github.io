@@ -1,48 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-  <script
-    type="module"
-    src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
-  ></script>
-  <head>
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+<html lang="es">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" href="https://glitch.com/favicon.ico" />
+<head>
 
-    <!--
-      This is the page head - it contains info the browser uses
-      Like the title, which appears on the browser tab but not inside the page
-      Further down you'll see the content that displays in the page
-    -->
-    <title>Hello World!</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="icons/Artestlogo512.png" />
 
-    <!-- The website stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
 
-    <!-- The website JavaScript file -->
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <div>
-      <model-viewer
-        src="/Artest_models/Artest.glb"
-        ar
-        ar-modes="scene-viewer webxr quick-look"
-        camera-controls
-        poster="poster.webp"
-        shadow-intensity="1"
-      >
-        <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-        </div>
-        <button slot="ar-button" id="ar-button">View in your space</button>
-        
-      </model-viewer>
-    </div>
-  </body>
+  <title>Modelo Artest</title>
+
+  <!-- The website stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  
+</head>
+
+<body>
+  <div>
+    <model-viewer id="model_viewer" src="Artest_models/Artest.glb" 
+    ar ar-modes="scene-viewer webxr quick-look" 
+    camera-controls
+    shadow-intensity="1">
+      <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">View in your space</button>
+
+    </model-viewer>
+  </div>
+</body>
+
 </html>
